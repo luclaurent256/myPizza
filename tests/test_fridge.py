@@ -95,7 +95,7 @@ class TestFridgeCount(TestCase):
         fridge = Fridge(1)
         maker = PizzaMaker(fridge)
         self.assertTrue(hasattr(fridge, 'ingredient_used'),
-                        msg='Fridge count feature not picked')
+                       msg='Fridge count feature not picked')
         self.assertFalse(hasattr(maker, 'buy_ingredients'),
                          msg='Commit "Buy behavior" should have not been included')
         self.assertFalse(hasattr(fridge, 'reset_count'),
